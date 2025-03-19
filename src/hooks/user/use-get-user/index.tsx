@@ -2,7 +2,7 @@ import { UserType } from "@/types/user";
 import { useEffect, useState } from "react";
 
 const fetchSingleUser = (userId: string) => {
-  return fetch(`https://dummyjson.com/users/${userId}`);
+  return fetch(`/api/user/${userId}`);
 };
 
 const useGetUser = (userId: string) => {
